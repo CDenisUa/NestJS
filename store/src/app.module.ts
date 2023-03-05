@@ -9,9 +9,10 @@ import { AuthModule } from './auth/auth.module';
 import { TopPageModule } from './top-page/top-page.module';
 import { ProductModule } from './product/product.module';
 import { ReviewModule } from './review/review.module';
+import { TestModule } from './test/test.module';
 
 @Module({
-    imports: [AuthModule, TopPageModule, ProductModule, ReviewModule],
+    imports: [AuthModule, TopPageModule, ProductModule, ReviewModule, TestModule],
     controllers: [AppController],
     providers: [AppService],
 })
