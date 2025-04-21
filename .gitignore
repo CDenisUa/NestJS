@@ -35,6 +35,9 @@ coverage/
 # IDEs and editors
 .idea/
 .vscode/
+**/.idea/
+**/.vscode/
+
 *.sublime-workspace
 *.sublime-project
 .project

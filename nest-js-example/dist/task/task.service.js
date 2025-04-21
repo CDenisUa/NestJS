@@ -31,6 +31,23 @@ let TaskService = class TaskService {
         }
         return task;
     }
+    create(dto) {
+        const { title } = dto;
+        const newTask = {
+            id: this.tasks.length + 1,
+            title: title,
+            isCompleted: false,
+        };
+        this.tasks.push(newTask);
+        return this.tasks;
+    }
+    update(id, dto) {
+        const { title, isCompleted } = dto;
+        const task = this.findById(id);
+        task.title = title;
+        task.isCompleted = isCompleted;
+        return task;
+    }
 };
 exports.TaskService = TaskService;
 exports.TaskService = TaskService = __decorate([
