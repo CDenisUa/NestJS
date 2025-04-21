@@ -1,35 +1,62 @@
-# compiled output
-dist
-node_modules
+# ========================
+# Node.js & NestJS projects
+# ========================
+
+# Build output
+dist/
+.out/
+build/
+*.tsbuildinfo
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+.env.*.local
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# OS
+# OS-specific files
 .DS_Store
+Thumbs.db
 
-# Tests
-coverage
-.nyc_output
+# Test coverage
+coverage/
+.nyc_output/
 
 # IDEs and editors
-.idea
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
 .project
 .classpath
-.c9/
-*.launch
 .settings/
-*.sublime-workspace
+*.launch
+.c9/
 
-# IDE - VSCode
-.vscode/*
+# VSCode - keep useful workspace configs if needed
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Optional: ignore local databases, docker volumes
+docker-data/
+**/backend/data/
+
+# Yarn / npm / pnpm lock files (optional if using only one)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
+
+# Git hooks (optional)
+.husky/_/
